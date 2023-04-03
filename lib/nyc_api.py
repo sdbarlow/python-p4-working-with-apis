@@ -16,7 +16,7 @@ class GetPrograms:
         programs_list = []
         programs = json.loads(self.get_programs())
         for program in programs:
-            programs_list.append(program["agency"])
+            programs_list.append(program["site_name"])
 
         return programs_list
 
